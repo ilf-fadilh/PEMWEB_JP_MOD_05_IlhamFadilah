@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Masuk - Ruang Baca</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/owl.png" />
+    <link rel="shortcut icon" href="assets/owl.png" type="image/x-icon" />
+
+    <style>
+      :root {
+        --rb-red: #ed2224;
+        --rb-red-dark: #bf2026;
+      }
+
+      .bg-ruang {
+        background-color: var(--rb-red);
+      }
+
+      .btn-ruang {
+        --bs-btn-color: #fff;
+        --bs-btn-bg: var(--rb-red);
+        --bs-btn-border-color: var(--rb-red);
+        --bs-btn-hover-color: #fff;
+        --bs-btn-hover-bg: var(--rb-red-dark);
+        --bs-btn-hover-border-color: var(--rb-red-dark);
+        --bs-btn-active-color: #fff;
+        --bs-btn-active-bg: var(--rb-red-dark);
+        --bs-btn-active-border-color: var(--rb-red-dark);
+        --bs-btn-focus-shadow-rgb: 237, 34, 36;
+      }
+
+      .link-ruang {
+        color: var(--rb-red);
+      }
+
+      .link-ruang:hover {
+        color: var(--rb-red-dark);
+      }
+
+      .form-check-input:checked {
+        background-color: var(--rb-red);
+        border-color: var(--rb-red);
+      }
+
+      .form-control:focus,
+      .form-check-input:focus {
+        border-color: var(--rb-red);
+        box-shadow: 0 0 0 0.25rem rgba(237, 34, 36, 0.25);
+      }
+
+      .logo-openlib img {
+        height: 120px;
+        width: auto;
+      }
+
+      @media (max-height: 560px) {
+        .logo-openlib {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+
+  <body class="bg-light min-vh-100 d-flex flex-column">
+    <nav class="navbar navbar-expand-md navbar-dark bg-ruang">
+      <div class="container">
+        <a class="navbar-brand fw-semibold" href="#">Ruang Baca</a>
+
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#menuUtama"
+          aria-controls="menuUtama"
+          aria-expanded="false"
+          aria-label="Buka menu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menuUtama">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#">Beranda</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Tentang</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Bantuan</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container py-5">
+      <div class="row justify-content-center">
+        <div class="col-12 col-sm-10 col-md-8 col-lg-6 col-xl-4">
+          <div class="card border-0 shadow">
+            <div class="card-body p-4">
+              <h1 class="h4 text-center fw-semibold mb-1">
+                Masuk ke Ruang Baca
+              </h1>
+              <p class="text-center text-secondary small mb-4">
+                Temukan bacaan untuk hari ini.
+              </p>
+
+              <form>
+                <div class="mb-3">
+                  <label for="username" class="form-label small"
+                    >Username</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="username"
+                    placeholder="Masukkan username"
+                  />
+                </div>
+
+                <div class="mb-3">
+                  <label for="password" class="form-label small"
+                    >Password</label
+                  >
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="password"
+                    placeholder="Masukkan password"
+                  />
+                </div>
+
+                <div class="form-check mb-3">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="ingatSaya"
+                  />
+                  <label class="form-check-label small" for="ingatSaya"
+                    >Ingat saya</label
+                  >
+                </div>
+
+                <div class="d-grid">
+                  <button type="submit" class="btn btn-ruang">Masuk</button>
+                </div>
+              </form>
+            </div>
+
+            <div class="card-footer bg-light text-center py-3">
+              <a href="#" class="link-ruang small">Lupa password?</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="logo-openlib text-center mt-auto pb-3">
+      <img src="assets/owl.png" alt="Logo burung hantu membaca" />
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
